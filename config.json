@@ -1,0 +1,353 @@
+{
+    "branding": {
+        "companyName": "FUSION POLYMER INDUSTRIES",
+        "tagline": "Where innovation meets expertise",
+        "logo": "https://via.placeholder.com/180x60/1a8754/ffffff?text=YOUR+LOGO",
+        "topBar": {
+            "phone": "+1 (555) 123-4567",
+            "email": "info@company.com",
+            "whatsapp": "+1234567890"
+        }
+    },
+    "colors": {
+        "primary": "#4f46e5",
+        "primaryDark": "#4338ca",
+        "primaryLight": "#6366f1",
+        "secondary": "#0ea5e9",
+        "accent": "#f59e0b",
+        "dark": "#0f172a",
+        "light": "#f8fafc",
+        "white": "#ffffff",
+        "gray": "#64748b"
+    },
+    "navigation": [
+        {
+            "text": "Home",
+            "link": "#home"
+        },
+        {
+            "text": "About Us",
+            "link": "#about"
+        },
+        {
+            "text": "Products",
+            "link": "#products"
+        },
+        {
+            "text": "Industries",
+            "link": "#industries"
+        },
+        {
+            "text": "Gallery",
+            "link": "#gallery"
+        },
+        {
+            "text": "Contact",
+            "link": "#contact"
+        }
+    ],
+    "hero": {
+        "title": "Echo Polymers",
+        "subtitle": "from Extrusion & Molding process",
+        "description": "Manufacturing high-quality rubber products as per international standards",
+        "ctaText": "Inquire Now",
+        "ctaLink": "#contact",
+        "images": [
+            "images/1.png",
+            "images/2.png",
+            "images/3.png"
+        ],
+        "currentSlide": 0
+    },
+    "about": {
+        "title": "FUSION POLYMER INDUSTRIES",
+        "tagline": "Where innovation meets expertise",
+        "description": "FUSION POLYMER INDUSTRIES is the group of well experienced, energetic, young & professional Rubber Technologist & Mechanical Engineers. The company is manufacturing MULTIPUL Rubber products from Extrusion & Molding process as per International standards.\n\nOur company boasts of a steady growth since its inception. While acquiring latest technology for development and production, we have steadily been introducing innovative products and providing customized solutions for various business sectors."
+    },
+    "products": {
+        "sectionTitle": "World-Class Range of",
+        "sectionHighlight": "Customized Rubber Products",
+        "items": [
+            {
+                "name": "Solid EPDM Rubber Profiles",
+                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500",
+                "link": "#product-1"
+            },
+            {
+                "name": "Silicone Rubber Profiles",
+                "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500",
+                "link": "#product-2"
+            },
+            {
+                "name": "Co-Extrusion Rubber Profile",
+                "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500",
+                "link": "#product-3"
+            },
+            {
+                "name": "Silicone Rubber Tube",
+                "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500",
+                "link": "#product-4"
+            },
+            {
+                "name": "Industrial Rubber Profiles",
+                "image": "https://images.unsplash.com/photo-1581092583537-20d51876f3f7?w=500",
+                "link": "#product-5"
+            },
+            {
+                "name": "Rubber Expansion Joints",
+                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500",
+                "link": "#product-6"
+            },
+            {
+                "name": "Sponge Rubber Profile",
+                "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500",
+                "link": "#product-7"
+            },
+            {
+                "name": "Fire Retardant Profiles",
+                "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500",
+                "link": "#product-8"
+            },
+            {
+                "name": "Bus Body/Automotive Profiles",
+                "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500",
+                "link": "#product-9"
+            },
+            {
+                "name": "Rubber Tubes",
+                "image": "https://images.unsplash.com/photo-1581092583537-20d51876f3f7?w=500",
+                "link": "#product-10"
+            }
+        ]
+    },
+    "clients": {
+        "title": "Our Clients",
+        "description": "Nurturing lasting connections with our clients has been a highlight of our journey. Their gratitude and loyalty inspire us to continue delivering exceptional results.",
+        "logos": [
+            "https://via.placeholder.com/150x80/e5e5e5/666666?text=Client+1",
+            "https://via.placeholder.com/150x80/e5e5e5/666666?text=Client+2",
+            "https://via.placeholder.com/150x80/e5e5e5/666666?text=Client+3",
+            "https://via.placeholder.com/150x80/e5e5e5/666666?text=Client+4",
+            "https://via.placeholder.com/150x80/e5e5e5/666666?text=Client+5",
+            "https://via.placeholder.com/150x80/e5e5e5/666666?text=Client+6"
+        ]
+    },
+    "industries": {
+        "title": "Industries We Cater To",
+        "items": [
+            {
+                "name": "Automobile",
+                "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500"
+            },
+            {
+                "name": "Railway",
+                "image": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=500"
+            },
+            {
+                "name": "Oil & Gas",
+                "image": "https://images.unsplash.com/photo-1515162305570-5f703f8e86d1?w=500"
+            },
+            {
+                "name": "Food Industry",
+                "image": "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=500"
+            },
+            {
+                "name": "Construction",
+                "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500"
+            },
+            {
+                "name": "Electrical",
+                "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=500"
+            },
+            {
+                "name": "Chemical",
+                "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500"
+            },
+            {
+                "name": "Infrastructure",
+                "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500"
+            },
+            {
+                "name": "Mining",
+                "image": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=500"
+            },
+            {
+                "name": "Manufacturing",
+                "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500"
+            }
+        ]
+    },
+    "whyChoose": {
+        "title": "Why Choose Fusion Polymer?",
+        "backgroundColor": "#1a8754",
+        "features": [
+            {
+                "icon": "👥",
+                "title": "Professional Team",
+                "description": "With a team of engineers and highly specialized workers, we ensure the products we make will be extremely quality."
+            },
+            {
+                "icon": "🔧",
+                "title": "Smart Work",
+                "description": "We always work smart with high-tech modern equipment and machinery to deliver best results."
+            },
+            {
+                "icon": "💬",
+                "title": "Great Support",
+                "description": "Our support and advice team always helps customers wholeheartedly and answer all questions."
+            }
+        ]
+    },
+    "stats": {
+        "title": "Our Success Story",
+        "backgroundColor": "#f5f5f5",
+        "items": [
+            {
+                "icon": "🏭",
+                "value": "1500+",
+                "label": "Products Manufactured"
+            },
+            {
+                "icon": "🌟",
+                "value": "2000+",
+                "label": "Satisfied Clients"
+            },
+            {
+                "icon": "👥",
+                "value": "100+",
+                "label": "Expert Team"
+            },
+            {
+                "icon": "📈",
+                "value": "20+",
+                "label": "Years Experience"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Request a call back",
+        "subtitle": "Fill out the form below and we'll get back to you soon",
+        "formFields": [
+            {
+                "name": "name",
+                "label": "Name",
+                "type": "text",
+                "placeholder": "Your Name *",
+                "required": true,
+                "icon": "👤"
+            },
+            {
+                "name": "email",
+                "label": "Email",
+                "type": "email",
+                "placeholder": "Your Email *",
+                "required": true,
+                "icon": "📧"
+            },
+            {
+                "name": "phone",
+                "label": "Phone",
+                "type": "tel",
+                "placeholder": "Your Phone *",
+                "required": true,
+                "icon": "📞"
+            },
+            {
+                "name": "company",
+                "label": "Company",
+                "type": "text",
+                "placeholder": "Company Name",
+                "required": false,
+                "icon": "🏢"
+            },
+            {
+                "name": "product",
+                "label": "Product Interest",
+                "type": "text",
+                "placeholder": "Product of Interest",
+                "required": false,
+                "icon": "📦"
+            },
+            {
+                "name": "message",
+                "label": "Message",
+                "type": "textarea",
+                "placeholder": "Your Message",
+                "required": true,
+                "icon": "✉️"
+            }
+        ],
+        "submitButtonText": "Submit",
+        "successMessage": "Thank you! We'll get back to you shortly.",
+        "contactInfo": [
+            {
+                "icon": "📍",
+                "label": "Address",
+                "value": "123 Industrial Park, Manufacturing District, City, State 12345"
+            },
+            {
+                "icon": "📞",
+                "label": "Phone",
+                "value": "+1 (555) 123-4567"
+            },
+            {
+                "icon": "📧",
+                "label": "Email",
+                "value": "info@fusionpolymer.com"
+            },
+            {
+                "icon": "⏰",
+                "label": "Working Hours",
+                "value": "Mon - Sat: 9:00 AM - 6:00 PM"
+            }
+        ],
+        "quickLinks": [
+            {
+                "text": "About Us",
+                "link": "#about"
+            },
+            {
+                "text": "Our Products",
+                "link": "#products"
+            },
+            {
+                "text": "Industries",
+                "link": "#industries"
+            },
+            {
+                "text": "Quality Policy",
+                "link": "#quality"
+            },
+            {
+                "text": "Privacy Policy",
+                "link": "#privacy"
+            }
+        ]
+    },
+    "footer": {
+        "copyright": "© 2024 Fusion Polymer Industries. All Rights Reserved.",
+        "developedBy": "Designed & Developed with ❤️",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "icon": "📘",
+                "link": "#"
+            },
+            {
+                "name": "Twitter",
+                "icon": "🐦",
+                "link": "#"
+            },
+            {
+                "name": "LinkedIn",
+                "icon": "💼",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "icon": "📷",
+                "link": "#"
+            }
+        ]
+    }
+}

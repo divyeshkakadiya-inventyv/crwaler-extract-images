@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Fusion Polymer Industries</title>
+    <meta name="description" content="Manufacturing high-quality rubber products from extrusion and molding process">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-sans">
+    <!-- Modern Overlay Header -->
+    <header class="header-main" id="main-header">
+        <div class="top-bar">
+            <div class="container mx-auto px-4 flex justify-between items-center text-sm">
+                <div class="flex gap-6">
+                    <span id="top-phone" class="flex items-center gap-2">📞 Phone</span>
+                    <span id="top-email" class="flex items-center gap-2">📧 Email</span>
+                </div>
+                <div class="flex gap-4">
+                    <span>Follow Us:</span>
+                    <div id="social-links" class="flex gap-3">
+                        <!-- Social links will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="logo">
+                <img id="header-logo" src="" alt="Logo" class="h-14">
+            </div>
+            <ul id="nav-menu" class="hidden lg:flex space-x-8">
+                <!-- Navigation items will be inserted here -->
+            </ul>
+            <button id="mobile-menu-btn" class="lg:hidden text-3xl">☰</button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t">
+            <ul class="flex flex-col p-4 space-y-3" id="mobile-nav-menu">
+                <!-- Mobile navigation items will be inserted here -->
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section with Integrated Header -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider">
+            <div class="slider-container relative overflow-hidden">
+                <div id="hero-slides" class="slides-wrapper flex transition-transform duration-700">
+                    <!-- Slides will be inserted here -->
+                </div>
+                <!-- Slider Controls -->
+                <button id="prevSlide" class="slider-control prev">‹</button>
+                <button id="nextSlide" class="slider-control next">›</button>
+                <!-- Slider Dots -->
+                <div id="slider-dots" class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 id="about-title" class="text-4xl font-bold text-dark mb-3"></h2>
+                <p id="about-tagline" class="text-xl text-primary italic mb-6"></p>
+                <div id="about-description" class="text-gray-700 leading-relaxed whitespace-pre-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-dark mb-2">
+                    <span id="products-title"></span>
+                    <span id="products-highlight" class="text-primary block mt-2"></span>
+                </h2>
+            </div>
+            <div id="products-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
+                <!-- Products will be inserted here -->
+            </div>
+            <div class="text-center">
+                <button class="btn-primary">Download e-Catalog</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 id="clients-title" class="text-4xl font-bold text-dark mb-3"></h2>
+            <p id="clients-description" class="text-gray-600 max-w-3xl mx-auto mb-10"></p>
+            <div id="clients-logos" class="flex flex-wrap justify-center items-center gap-8">
+                <!-- Client logos will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 id="industries-title" class="text-4xl font-bold text-dark text-center mb-12"></h2>
+            <div id="industries-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Industries will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="why-choose" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 id="why-choose-title" class="text-4xl font-bold text-center mb-16"></h2>
+            <div id="why-choose-features" class="grid md:grid-cols-3 gap-10">
+                <!-- Features will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats-section" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 id="stats-title" class="text-4xl font-bold text-dark text-center mb-12"></h2>
+            <div id="stats-grid" class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Stats will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 id="contact-title" class="text-4xl font-bold text-dark text-center mb-3"></h2>
+                <p id="contact-subtitle" class="text-gray-600 text-center mb-12"></p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Contact Form -->
+                    <div class="md:col-span-1 bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-6">Send Message</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <!-- Form fields will be inserted here -->
+                            <div id="form-message" class="hidden p-4 rounded-lg mb-4"></div>
+                            <button type="submit" class="btn-primary w-full">
+                                <span id="submit-btn-text"></span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-6">Contact Info</h3>
+                        <div id="contact-info" class="space-y-5">
+                            <!-- Contact info will be inserted here -->
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-dark mb-6">Quick Links</h3>
+                        <ul id="quick-links" class="space-y-3">
+                            <!-- Quick links will be inserted here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p id="footer-copyright" class="text-center md:text-left"></p>
+                <p id="footer-developed" class="text-center"></p>
+            </div>
+            <div class="mt-6 flex justify-center gap-6" id="footer-social">
+                <!-- Footer social links will be inserted here -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/1234567890" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+        </a>
+
+        <!-- Inquiry Button -->
+        <a href="#contact" class="floating-btn inquiry-btn" title="Send Inquiry">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
