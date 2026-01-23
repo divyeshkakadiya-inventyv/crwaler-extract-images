@@ -2,7 +2,7 @@
     "branding": {
         "companyName": "FUSION POLYMER INDUSTRIES",
         "tagline": "Where innovation meets expertise",
-        "logo": "https://via.placeholder.com/180x60/1a8754/ffffff?text=YOUR+LOGO",
+        "logo": "https://via.placeholder.com/180x60/25b864/ffffff?text=FUSION+POLYMER",
         "topBar": {
             "phone": "+1 (555) 123-4567",
             "email": "info@company.com",
@@ -10,15 +10,15 @@
         }
     },
     "colors": {
-        "primary": "#4f46e5",
-        "primaryDark": "#4338ca",
-        "primaryLight": "#6366f1",
-        "secondary": "#0ea5e9",
-        "accent": "#f59e0b",
-        "dark": "#0f172a",
-        "light": "#f8fafc",
-        "white": "#ffffff",
-        "gray": "#64748b"
+        "primary": "#1a8754",
+        "primaryDark": "#156642",
+        "primaryLight": "#25b864",
+        "secondary": "#1a8754",
+        "accent": "#1a8754",
+        "dark": "#333333",
+        "light": "#FFFFFF",
+        "white": "#FFFFFF",
+        "gray": "#777777"
     },
     "navigation": [
         {
@@ -38,31 +38,27 @@
             "link": "#industries"
         },
         {
-            "text": "Gallery",
-            "link": "#gallery"
-        },
-        {
             "text": "Contact",
             "link": "#contact"
         }
     ],
     "hero": {
-        "title": "Echo Polymers",
-        "subtitle": "from Extrusion & Molding process",
-        "description": "Manufacturing high-quality rubber products as per international standards",
-        "ctaText": "Inquire Now",
+        "title": "Quality Rubber Products, Made with Care",
+        "subtitle": "Family-owned polymer business serving local industries since 2004",
+        "description": "We specialize in custom rubber extrusion and molding. Small business, personal service, quality results.",
+        "ctaText": "Let's Talk About Your Needs",
         "ctaLink": "#contact",
         "images": [
-            "images/1.png",
-            "images/2.png",
-            "images/3.png"
+            "images/hero-product-1.png",
+            "images/hero-product-2.png",
+            "images/hero-product-3.png"
         ],
         "currentSlide": 0
     },
     "about": {
-        "title": "FUSION POLYMER INDUSTRIES",
-        "tagline": "Where innovation meets expertise",
-        "description": "FUSION POLYMER INDUSTRIES is the group of well experienced, energetic, young & professional Rubber Technologist & Mechanical Engineers. The company is manufacturing MULTIPUL Rubber products from Extrusion & Molding process as per International standards.\n\nOur company boasts of a steady growth since its inception. While acquiring latest technology for development and production, we have steadily been introducing innovative products and providing customized solutions for various business sectors."
+        "title": "About Fusion Polymer",
+        "tagline": "Small Business, Big on Quality",
+        "description": "We're a small, family-owned polymer business based in Gujarat, India. Started in 2004 by experienced rubber technologists, we specialize in custom rubber extrusion and molding for local and regional industries.\n\nWhat makes us different? Personal service. When you call us, you talk to people who actually make your products. We're small enough to be flexible and quick, but experienced enough to handle complex requirements. Over 20 years, we've built lasting relationships with our clients by focusing on quality and reliability."
     },
     "products": {
         "sectionTitle": "World-Class Range of",
@@ -70,53 +66,43 @@
         "items": [
             {
                 "name": "Solid EPDM Rubber Profiles",
-                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500",
+                "image": "images/epdm-prod1.webp",
                 "link": "#product-1"
             },
             {
                 "name": "Silicone Rubber Profiles",
-                "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500",
+                "image": "images/silicone-prod1.webp",
                 "link": "#product-2"
             },
             {
                 "name": "Co-Extrusion Rubber Profile",
-                "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500",
+                "image": "images/co-extrusion-prod1.webp",
                 "link": "#product-3"
             },
             {
                 "name": "Silicone Rubber Tube",
-                "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500",
+                "image": "images/silicone-prod2.webp",
                 "link": "#product-4"
             },
             {
                 "name": "Industrial Rubber Profiles",
-                "image": "https://images.unsplash.com/photo-1581092583537-20d51876f3f7?w=500",
+                "image": "images/industrial-profile1.webp",
                 "link": "#product-5"
             },
             {
-                "name": "Rubber Expansion Joints",
-                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500",
+                "name": "Rubber Seals & Gaskets",
+                "image": "images/door-gasket-1.webp",
                 "link": "#product-6"
             },
             {
                 "name": "Sponge Rubber Profile",
-                "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500",
+                "image": "images/solid-profile1.webp",
                 "link": "#product-7"
             },
             {
                 "name": "Fire Retardant Profiles",
-                "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500",
+                "image": "images/flame-1.webp",
                 "link": "#product-8"
-            },
-            {
-                "name": "Bus Body/Automotive Profiles",
-                "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500",
-                "link": "#product-9"
-            },
-            {
-                "name": "Rubber Tubes",
-                "image": "https://images.unsplash.com/photo-1581092583537-20d51876f3f7?w=500",
-                "link": "#product-10"
             }
         ]
     },
@@ -178,55 +164,55 @@
         ]
     },
     "whyChoose": {
-        "title": "Why Choose Fusion Polymer?",
+        "title": "Why Work With Us?",
         "backgroundColor": "#1a8754",
         "features": [
             {
-                "icon": "👥",
-                "title": "Professional Team",
-                "description": "With a team of engineers and highly specialized workers, we ensure the products we make will be extremely quality."
+                "icon": "🤝",
+                "title": "Personal Service",
+                "description": "Talk directly with our team. No automated systems, no runaround. Just real people who care about your project and understand rubber technology."
             },
             {
-                "icon": "🔧",
-                "title": "Smart Work",
-                "description": "We always work smart with high-tech modern equipment and machinery to deliver best results."
+                "icon": "⚡",
+                "title": "Quick & Flexible",
+                "description": "Small batches? Custom specs? Rush orders? We can do that. Being small means we're nimble, responsive, and can adapt to your needs."
             },
             {
-                "icon": "💬",
-                "title": "Great Support",
-                "description": "Our support and advice team always helps customers wholeheartedly and answer all questions."
+                "icon": "✓",
+                "title": "Quality First",
+                "description": "20+ years of experience in rubber technology. We may be small, but we don't compromise on quality. Every product is made with care."
             }
         ]
     },
     "stats": {
-        "title": "Our Success Story",
+        "title": "Our Journey",
         "backgroundColor": "#f5f5f5",
         "items": [
             {
-                "icon": "🏭",
-                "value": "1500+",
-                "label": "Products Manufactured"
+                "icon": "📦",
+                "value": "500+",
+                "label": "Custom Products Made"
             },
             {
-                "icon": "🌟",
-                "value": "2000+",
-                "label": "Satisfied Clients"
+                "icon": "🤝",
+                "value": "150+",
+                "label": "Happy Clients"
             },
             {
                 "icon": "👥",
-                "value": "100+",
-                "label": "Expert Team"
+                "value": "15+",
+                "label": "Skilled Team Members"
             },
             {
-                "icon": "📈",
+                "icon": "📅",
                 "value": "20+",
-                "label": "Years Experience"
+                "label": "Years in Business"
             }
         ]
     },
     "contact": {
-        "title": "Request a call back",
-        "subtitle": "Fill out the form below and we'll get back to you soon",
+        "title": "Let's Talk",
+        "subtitle": "Have a project in mind? Give us a call or send a message. We usually respond within a few hours.",
         "formFields": [
             {
                 "name": "name",

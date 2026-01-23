@@ -51,6 +51,14 @@ function initializePage() {
 
     // Initialize scroll animations
     observeElements();
+
+    // Hide loading overlay after everything is loaded
+    setTimeout(() => {
+        const loadingOverlay = document.getElementById('loading-overlay');
+        if (loadingOverlay) {
+            loadingOverlay.classList.add('hidden');
+        }
+    }, 500);
 }
 
 // Apply color scheme from config
@@ -133,21 +141,24 @@ function updateHeroSlider() {
     dotsContainer.innerHTML = '';
 
     config.hero.images.forEach((imageUrl, index) => {
-        // Create slide with split layout
+        // Create slide with full-width background
         const slide = document.createElement('div');
         slide.className = 'hero-slide';
 
-        // Set slide background image as CSS variable
-        slide.style.setProperty(`--slide-${index + 1}-bg`, `url('${imageUrl}')`);
+        // Set background image directly on slide
+        slide.style.backgroundImage = `url('${imageUrl}')`;
 
-        slide.innerHTML = `
-            <div class="hero-slide-content">
-                <h1>${config.hero.title}</h1>
-                <p>${config.hero.subtitle}</p>
-                <p class="description">${config.hero.description}</p>
-                <a href="${config.hero.ctaLink}" class="btn-primary">${config.hero.ctaText}</a>
-            </div>
+        // Create content container with text overlay
+        const contentContainer = document.createElement('div');
+        contentContainer.className = 'hero-slide-content';
+        contentContainer.innerHTML = `
+            <h1>${config.hero.title}</h1>
+            <p>${config.hero.subtitle}</p>
+            <p class="description">${config.hero.description}</p>
+            <a href="${config.hero.ctaLink}" class="btn-primary">${config.hero.ctaText}</a>
         `;
+
+        slide.appendChild(contentContainer);
         slidesWrapper.appendChild(slide);
 
         // Create dot
@@ -155,11 +166,6 @@ function updateHeroSlider() {
         dot.className = `slider-dot ${index === 0 ? 'active' : ''}`;
         dot.addEventListener('click', () => goToSlide(index));
         dotsContainer.appendChild(dot);
-    });
-
-    // Set CSS variables on document root for all slides
-    config.hero.images.forEach((imageUrl, index) => {
-        document.documentElement.style.setProperty(`--slide-${index + 1}-bg`, `url('${imageUrl}')`);
     });
 }
 
@@ -450,7 +456,8 @@ function initializeEventListeners() {
 
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            const isExpanded = mobileMenu.classList.toggle('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
         });
 
         // Close mobile menu when clicking on a link
@@ -458,6 +465,7 @@ function initializeEventListeners() {
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
             });
         });
     }
@@ -524,28 +532,87 @@ function initHeaderScroll() {
     });
 }
 
-// Handle form submission
+// Handle form submission with validation
 function handleFormSubmit(e) {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    const form = e.target;
+    const messageDiv = document.getElementById('form-message');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    // Clear previous messages
+    messageDiv.classList.add('hidden');
+
+    // Validate form
+    let isValid = true;
+    const formData = new FormData(form);
     const data = Object.fromEntries(formData);
+
+    // Remove previous error states
+    form.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+    form.querySelectorAll('.form-error-message').forEach(el => el.remove());
+
+    // Validate required fields
+    form.querySelectorAll('[required]').forEach(field => {
+        if (!field.value.trim()) {
+            isValid = false;
+            field.classList.add('error');
+            const errorMsg = document.createElement('span');
+            errorMsg.className = 'form-error-message';
+            errorMsg.textContent = 'This field is required';
+            field.parentNode.appendChild(errorMsg);
+        } else {
+            field.classList.add('success');
+        }
+    });
+
+    // Validate email format
+    const emailField = form.querySelector('[type="email"]');
+    if (emailField && emailField.value) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailField.value)) {
+            isValid = false;
+            emailField.classList.add('error');
+            const errorMsg = document.createElement('span');
+            errorMsg.className = 'form-error-message';
+            errorMsg.textContent = 'Please enter a valid email address';
+            emailField.parentNode.appendChild(errorMsg);
+        }
+    }
+
+    if (!isValid) {
+        messageDiv.textContent = 'Please fix the errors above';
+        messageDiv.className = 'error';
+        messageDiv.classList.remove('hidden');
+        return;
+    }
+
+    // Disable submit button
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
 
     console.log('Form submitted:', data);
 
-    // Show success message
-    const messageDiv = document.getElementById('form-message');
-    messageDiv.textContent = config.contact.successMessage || 'Thank you! We will get back to you soon.';
-    messageDiv.className = 'success';
-    messageDiv.classList.remove('hidden');
-
-    // Clear form
-    e.target.reset();
-
-    // Hide message after 5 seconds
+    // Simulate form submission (replace with actual API call)
     setTimeout(() => {
-        messageDiv.classList.add('hidden');
-    }, 5000);
+        // Show success message
+        messageDiv.textContent = config.contact.successMessage || 'Thank you! We will get back to you soon.';
+        messageDiv.className = 'success';
+        messageDiv.classList.remove('hidden');
+
+        // Clear form
+        form.reset();
+        form.querySelectorAll('.success').forEach(el => el.classList.remove('success'));
+
+        // Re-enable submit button
+        submitButton.disabled = false;
+        submitButton.textContent = config.contact.submitButtonText;
+
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            messageDiv.classList.add('hidden');
+        }, 5000);
+    }, 1000);
 }
 
 // Intersection Observer for scroll animations with enhanced effects
