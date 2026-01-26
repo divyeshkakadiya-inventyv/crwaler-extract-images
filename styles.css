@@ -171,7 +171,7 @@ html {
 .hero-slider {
     position: relative;
     width: 100%;
-    min-height: 500px;
+    min-height: 600px;
     overflow: hidden;
     background: white;
 }
@@ -183,28 +183,29 @@ html {
 
 .hero-slide {
     min-width: 100%;
-    min-height: 500px;
+    min-height: 600px;
     background: white;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
-/* Split Layout: Text Left, Image Right */
+/* Split Layout: Text Left (45%), Image Right (55%) - Bigger Image */
 .hero-split-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 40px;
     align-items: center;
 }
 
 .hero-text-content {
-    padding-right: 20px;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .hero-text-content h1 {
-    font-size: 42px;
+    font-size: 44px;
     font-weight: 700;
     color: var(--color-dark);
     margin-bottom: 15px;
@@ -231,13 +232,15 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 }
 
 .hero-image-content img {
-    max-width: 100%;
+    max-width: 120%;
     height: auto;
     object-fit: contain;
-    max-height: 400px;
+    max-height: 500px;
+    margin-left: -10%;
 }
 
 .slider-control {
