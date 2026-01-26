@@ -1,4 +1,4 @@
-# Deployment Guide - Fusion Polymer Industries Website
+# Deployment Guide - Echo Polymer Industries Website
 
 ## Pre-Deployment Checklist
 

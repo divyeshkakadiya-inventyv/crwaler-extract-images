@@ -1,5 +1,5 @@
 /* ============================================
-   FUSION POLYMER INDUSTRIES - CLEAN FLAT DESIGN
+   ECHO POLYMER INDUSTRIES - CLEAN FLAT DESIGN
    No white boxes, no cards, professional layout
    ============================================ */
 
@@ -205,7 +205,7 @@ html {
 }
 
 .hero-text-content h1 {
-    font-size: 44px;
+    font-size: 37px;
     font-weight: 700;
     color: var(--color-dark);
     margin-bottom: 15px;
@@ -428,6 +428,10 @@ html {
     max-width: 800px;
     margin: 0 auto 40px;
     color: var(--color-text);
+    font-size: 18px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
 }
 
 .clients-grid {
@@ -451,45 +455,208 @@ html {
     opacity: 1;
 }
 
-/* Industries Section */
+/* Industries Section - Premium Lucrative Design */
 .industries-section {
-    padding: 80px 0;
-    background: var(--color-light-bg);
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e9 50%, #f8f9fa 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.industries-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(26, 135, 84, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(26, 135, 84, 0.03) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .industries-section h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 42px;
     color: var(--color-dark);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.industries-section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+    margin: 15px auto 50px;
+    border-radius: 2px;
 }
 
 .industries-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+    position: relative;
+    z-index: 1;
 }
 
 .industry-item {
     text-align: center;
-    transition: transform 0.3s;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+    padding: 30px 20px;
+    border-radius: 16px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid transparent;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.industry-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 135, 84, 0.05), rgba(37, 184, 100, 0.05));
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 16px;
+}
+
+.industry-item:hover::before {
+    opacity: 1;
+}
+
+.industry-item::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+.industry-item:hover::after {
+    opacity: 1;
+    animation: shine 1.5s ease-in-out;
+}
+
+@keyframes shine {
+    0% {
+        top: -50%;
+        left: -50%;
+    }
+
+    100% {
+        top: 150%;
+        left: 150%;
+    }
 }
 
 .industry-item:hover {
-    transform: scale(1.05);
+    transform: translateY(-15px) scale(1.05);
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+    box-shadow: 0 25px 50px rgba(26, 135, 84, 0.2),
+        0 10px 20px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border-color: rgba(26, 135, 84, 0.2);
 }
 
 .industry-item img {
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     object-fit: contain;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.12));
+    animation: float 3.5s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+}
+
+.industry-item:hover img {
+    transform: scale(1.15) rotate(8deg);
+    filter: drop-shadow(0 12px 24px rgba(26, 135, 84, 0.35)) drop-shadow(0 0 20px rgba(26, 135, 84, 0.15));
 }
 
 .industry-item p {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
     color: var(--color-dark);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.3px;
+}
+
+.industry-item:hover p {
+    color: var(--color-primary);
+    transform: scale(1.05);
+    text-shadow: 0 2px 4px rgba(26, 135, 84, 0.1);
+}
+
+/* Enhanced floating animation for industry images */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Add staggered animation delay for each item */
+.industry-item:nth-child(1) img {
+    animation-delay: 0s;
+}
+
+.industry-item:nth-child(2) img {
+    animation-delay: 0.2s;
+}
+
+.industry-item:nth-child(3) img {
+    animation-delay: 0.4s;
+}
+
+.industry-item:nth-child(4) img {
+    animation-delay: 0.6s;
+}
+
+.industry-item:nth-child(5) img {
+    animation-delay: 0.8s;
+}
+
+.industry-item:nth-child(6) img {
+    animation-delay: 1s;
+}
+
+.industry-item:nth-child(7) img {
+    animation-delay: 1.2s;
+}
+
+.industry-item:nth-child(8) img {
+    animation-delay: 1.4s;
+}
+
+.industry-item:nth-child(9) img {
+    animation-delay: 1.6s;
+}
+
+.industry-item:nth-child(10) img {
+    animation-delay: 1.8s;
 }
 
 /* Why Choose Section */

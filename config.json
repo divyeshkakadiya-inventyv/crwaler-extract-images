@@ -1,10 +1,10 @@
 {
     "branding": {
-        "companyName": "FUSION POLYMER INDUSTRIES",
+        "companyName": "ECHO POLYMER INDUSTRIES",
         "tagline": "Where innovation meets expertise",
         "logo": "images/logo.png",
         "topBar": {
-            "phone": "+1 (555) 123-4567",
+            "phone": "+919106928856",
             "email": "info@company.com",
             "whatsapp": "+1234567890"
         }
@@ -56,7 +56,7 @@
         "currentSlide": 0
     },
     "about": {
-        "title": "About Fusion Polymer",
+        "title": "About Echo Polymer",
         "tagline": "Small Business, Big on Quality",
         "description": "We're a small, family-owned polymer business based in Gujarat, India. Started in 2004 by experienced rubber technologists, we specialize in custom rubber extrusion and molding for local and regional industries.\n\nWhat makes us different? Personal service. When you call us, you talk to people who actually make your products. We're small enough to be flexible and quick, but experienced enough to handle complex requirements. Over 20 years, we've built lasting relationships with our clients by focusing on quality and reliability."
     },
@@ -101,7 +101,7 @@
             },
             {
                 "name": "Fire Retardant Profiles",
-                "image": "images/flame-1.webp",
+                "image": "iimages/prod8.webp",
                 "link": "#product-8"
             }
         ]
@@ -274,12 +274,12 @@
             {
                 "icon": "📞",
                 "label": "Phone",
-                "value": "+1 (555) 123-4567"
+                "value": "+919106928856"
             },
             {
                 "icon": "📧",
                 "label": "Email",
-                "value": "info@fusionpolymer.com"
+                "value": "mailto:echopolymer@gmail.com"
             },
             {
                 "icon": "⏰",
@@ -311,7 +311,7 @@
         ]
     },
     "footer": {
-        "copyright": "© 2024 Fusion Polymer Industries. All Rights Reserved.",
+        "copyright": "© 2024 Echo Polymer Industries. All Rights Reserved.",
         "developedBy": "Designed & Developed with ❤️",
         "socialMedia": [
             {

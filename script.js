@@ -1,4 +1,4 @@
-// Fusion Polymer Industries - Simplified JavaScript
+// Echo Polymer Industries - Simplified JavaScript
 // No config.json dependency - all content embedded in HTML
 
 let currentSlide = 0;
