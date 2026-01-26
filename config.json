@@ -2,7 +2,7 @@
     "branding": {
         "companyName": "FUSION POLYMER INDUSTRIES",
         "tagline": "Where innovation meets expertise",
-        "logo": "https://via.placeholder.com/180x60/25b864/ffffff?text=FUSION+POLYMER",
+        "logo": "images/logo.png",
         "topBar": {
             "phone": "+1 (555) 123-4567",
             "email": "info@company.com",
